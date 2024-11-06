@@ -1,6 +1,6 @@
 ﻿Imports System.Data.OleDb
 
-Public Class Form2
+Public Class Home
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         showData()

@@ -60,6 +60,7 @@ Partial Class Login
         '
         Me.userText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.userText.Location = New System.Drawing.Point(205, 193)
+        Me.userText.MaxLength = 30
         Me.userText.Name = "userText"
         Me.userText.Size = New System.Drawing.Size(100, 29)
         Me.userText.TabIndex = 2
@@ -68,6 +69,7 @@ Partial Class Login
         '
         Me.passText.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.passText.Location = New System.Drawing.Point(205, 246)
+        Me.passText.MaxLength = 30
         Me.passText.Name = "passText"
         Me.passText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.passText.Size = New System.Drawing.Size(100, 29)

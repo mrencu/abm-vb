@@ -24,3 +24,11 @@ C:\Users\LAB1-PC07\Documents\abm-vb\WindowsApplication1\WindowsApplication1\bin\
 C:\Users\LAB1-PC07\Documents\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
 C:\Users\LAB1-PC07\Documents\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
 C:\Users\LAB1-PC07\Documents\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+C:\Users\LAB1-PC07\Documents\abm-vb\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\LAB1-PC07\Documents\abm-vb\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\LAB1-PC07\Documents\abm-vb\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\LAB1-PC07\Documents\abm-vb\WindowsApplication1\WindowsApplication1\bin\Debug\System.Data.dll
+C:\Users\LAB1-PC07\Documents\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Login.resources
+C:\Users\LAB1-PC07\Documents\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Home.resources
+C:\Users\LAB1-PC07\Documents\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\LAB1-PC07\Documents\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache

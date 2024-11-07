@@ -22,6 +22,7 @@ Partial Class Home
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Home))
         Me.dataGrid = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.employeeText = New System.Windows.Forms.TextBox()
@@ -33,7 +34,10 @@ Partial Class Home
         '
         'dataGrid
         '
+        Me.dataGrid.BackgroundColor = System.Drawing.Color.Peru
         Me.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dataGrid.Cursor = System.Windows.Forms.Cursors.Cross
+        Me.dataGrid.GridColor = System.Drawing.Color.Chocolate
         Me.dataGrid.Location = New System.Drawing.Point(302, 41)
         Me.dataGrid.Name = "dataGrid"
         Me.dataGrid.Size = New System.Drawing.Size(429, 183)
@@ -42,50 +46,66 @@ Partial Class Home
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(47, 74)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.Location = New System.Drawing.Point(17, 66)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(54, 13)
+        Me.Label1.Size = New System.Drawing.Size(103, 25)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Empleado"
         '
         'employeeText
         '
-        Me.employeeText.Location = New System.Drawing.Point(126, 71)
+        Me.employeeText.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.employeeText.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.employeeText.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.employeeText.Location = New System.Drawing.Point(126, 66)
         Me.employeeText.Name = "employeeText"
-        Me.employeeText.Size = New System.Drawing.Size(100, 20)
+        Me.employeeText.Size = New System.Drawing.Size(100, 25)
         Me.employeeText.TabIndex = 2
         '
         'searchButton
         '
-        Me.searchButton.Location = New System.Drawing.Point(66, 162)
+        Me.searchButton.BackColor = System.Drawing.Color.DarkOrange
+        Me.searchButton.FlatAppearance.BorderSize = 0
+        Me.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.searchButton.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.searchButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.searchButton.Location = New System.Drawing.Point(22, 176)
         Me.searchButton.Name = "searchButton"
-        Me.searchButton.Size = New System.Drawing.Size(75, 23)
+        Me.searchButton.Padding = New System.Windows.Forms.Padding(10)
+        Me.searchButton.Size = New System.Drawing.Size(204, 48)
         Me.searchButton.TabIndex = 3
         Me.searchButton.Text = "Buscar"
-        Me.searchButton.UseVisualStyleBackColor = True
+        Me.searchButton.UseVisualStyleBackColor = False
         '
         'optionCombo
         '
+        Me.optionCombo.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.optionCombo.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.optionCombo.FormattingEnabled = True
         Me.optionCombo.Items.AddRange(New Object() {"Añadir registros", "Eliminar registros", "Modificar registros", "Buscar registro"})
         Me.optionCombo.Location = New System.Drawing.Point(126, 108)
         Me.optionCombo.Name = "optionCombo"
-        Me.optionCombo.Size = New System.Drawing.Size(100, 21)
+        Me.optionCombo.Size = New System.Drawing.Size(100, 33)
         Me.optionCombo.TabIndex = 4
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(47, 111)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label2.Location = New System.Drawing.Point(17, 111)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(41, 13)
+        Me.Label2.Size = New System.Drawing.Size(78, 25)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Opción"
         '
-        'Form2
+        'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Chocolate
         Me.ClientSize = New System.Drawing.Size(784, 261)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.optionCombo)
@@ -93,10 +113,10 @@ Partial Class Home
         Me.Controls.Add(Me.employeeText)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dataGrid)
-        Me.Name = "Form2"
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Name = "Home"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form2"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        Me.Text = "Home"
         CType(Me.dataGrid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

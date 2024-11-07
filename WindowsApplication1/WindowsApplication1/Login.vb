@@ -1,17 +1,14 @@
 ﻿Imports System.Data.OleDb
 
 Public Class Login
-
     Private Sub submitButton_Click(sender As Object, e As EventArgs) Handles submitButton.Click
         ' Prepares connection string from module
         SystemModule.con = con
         ' Prepares query string
-        Dim query As String = "SELECT username, password FROM Users WHERE username = @username AND password = @password"
+        Dim query As String = "SELECT username, password FROM Users WHERE strComp(username, @username, 0) = 0 AND strComp(password, @password, 0) = 0"
         ' Declares variables which values are equal to user inputs
         Dim username As String = userText.Text
         Dim password As String = passText.Text
-        Dim usernameRead As String
-        Dim passwordRead As String
 
         Try
             ' Opens connection to the Access Database
@@ -27,31 +24,37 @@ Public Class Login
 
             ' TRUE = The reader has found data // FALSE = The reader hasn't found data
             If reader.HasRows Then
-                ' While the reader has data to read, it will extract the username and password values and convert it to string
-                While reader.Read()
-                    usernameRead = reader("username").ToString()
-                    passwordRead = reader("password").ToString()
-                End While
-                If username = usernameRead And password = passwordRead Then
-                    MessageBox.Show("¡User found!")
-                End If
+                Me.Hide()
+                SystemModule.mainForm.Show()
             Else
                 ' If the reader hasn't found data, we show a message to the user
-                MessageBox.Show("No users found")
+                MessageBox.Show("Nombre de usuario no encontrado o clave incorrecta")
             End If
         Catch ex As Exception
             ' If an error has been produced, we show a message to the user with the information of the problem
-            MessageBox.Show("An error ocurred: " & ex.Message)
+            MessageBox.Show("Un error ocurrió: " & ex.Message)
         Finally
             ' Regardless of the results, we close the connection to the database
             con.Close()
         End Try
+    End Sub
 
-        If username = usernameRead And password = passwordRead Then
-            MessageBox.Show("¡User found!")
-            Me.Hide()
-            SystemModule.mainForm.Show()
-        End If
+    Private Sub submitButton_Paint(sender As Object, e As PaintEventArgs) Handles submitButton.Paint
+        Dim buttonPath As New Drawing2D.GraphicsPath()
+        Dim radio As Integer = 20 ' Radio de los bordes redondeados
+
+        ' Definir un rectángulo con las dimensiones del botón
+        Dim rect As New Rectangle(0, 0, submitButton.Width, submitButton.Height)
+
+        ' Añadir bordes redondeados al rectángulo
+        buttonPath.AddArc(rect.X, rect.Y, radio, radio, 180, 90)
+        buttonPath.AddArc(rect.Right - radio, rect.Y, radio, radio, 270, 90)
+        buttonPath.AddArc(rect.Right - radio, rect.Bottom - radio, radio, radio, 0, 90)
+        buttonPath.AddArc(rect.X, rect.Bottom - radio, radio, radio, 90, 90)
+        buttonPath.CloseAllFigures()
+
+        ' Aplicar la forma redondeada al botón
+        submitButton.Region = New Region(buttonPath)
     End Sub
 
 End Class

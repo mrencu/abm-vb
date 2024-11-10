@@ -44,3 +44,16 @@ C:\Users\LAB3 - PC15\Documents\abm-vb\WindowsApplication1\WindowsApplication1\ob
 C:\Users\LAB3 - PC15\Documents\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Home.resources
 C:\Users\LAB3 - PC15\Documents\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
 C:\Users\LAB3 - PC15\Documents\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplication1\bin\Debug\System.Data.dll
+C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Login.resources
+C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Home.resources
+C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Añadir.resources

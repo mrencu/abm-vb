@@ -38,7 +38,7 @@ Partial Class Login
         Me.userLabel.AutoSize = True
         Me.userLabel.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.userLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.userLabel.Location = New System.Drawing.Point(73, 196)
+        Me.userLabel.Location = New System.Drawing.Point(51, 196)
         Me.userLabel.Name = "userLabel"
         Me.userLabel.Size = New System.Drawing.Size(82, 25)
         Me.userLabel.TabIndex = 0
@@ -50,7 +50,7 @@ Partial Class Login
         Me.passLabel.AutoSize = True
         Me.passLabel.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.passLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.passLabel.Location = New System.Drawing.Point(73, 249)
+        Me.passLabel.Location = New System.Drawing.Point(51, 249)
         Me.passLabel.Name = "passLabel"
         Me.passLabel.Size = New System.Drawing.Size(117, 25)
         Me.passLabel.TabIndex = 1
@@ -62,10 +62,10 @@ Partial Class Login
         Me.userText.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.userText.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.userText.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.userText.Location = New System.Drawing.Point(205, 197)
+        Me.userText.Location = New System.Drawing.Point(183, 197)
         Me.userText.MaxLength = 30
         Me.userText.Name = "userText"
-        Me.userText.Size = New System.Drawing.Size(100, 25)
+        Me.userText.Size = New System.Drawing.Size(150, 25)
         Me.userText.TabIndex = 2
         '
         'passText
@@ -75,11 +75,11 @@ Partial Class Login
         Me.passText.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.passText.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.passText.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.passText.Location = New System.Drawing.Point(205, 250)
+        Me.passText.Location = New System.Drawing.Point(183, 250)
         Me.passText.MaxLength = 30
         Me.passText.Name = "passText"
         Me.passText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.passText.Size = New System.Drawing.Size(100, 25)
+        Me.passText.Size = New System.Drawing.Size(150, 25)
         Me.passText.TabIndex = 3
         '
         'submitButton
@@ -90,7 +90,7 @@ Partial Class Login
         Me.submitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.submitButton.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.submitButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.submitButton.Location = New System.Drawing.Point(95, 294)
+        Me.submitButton.Location = New System.Drawing.Point(100, 294)
         Me.submitButton.Name = "submitButton"
         Me.submitButton.Padding = New System.Windows.Forms.Padding(10)
         Me.submitButton.Size = New System.Drawing.Size(184, 55)
@@ -103,7 +103,7 @@ Partial Class Login
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(102, 9)
+        Me.Label1.Location = New System.Drawing.Point(106, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(172, 31)
         Me.Label1.TabIndex = 5
@@ -112,8 +112,8 @@ Partial Class Login
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.majesticons__user_box_line__1_
-        Me.PictureBox1.Location = New System.Drawing.Point(111, 37)
+        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.user
+        Me.PictureBox1.Location = New System.Drawing.Point(117, 37)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(150, 150)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -134,6 +134,9 @@ Partial Class Login
         Me.Controls.Add(Me.passLabel)
         Me.Controls.Add(Me.userLabel)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(400, 400)
+        Me.MinimumSize = New System.Drawing.Size(400, 400)
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"

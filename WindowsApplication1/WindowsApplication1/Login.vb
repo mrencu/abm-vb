@@ -5,7 +5,7 @@ Public Class Login
         ' Prepares connection string from module
         SystemModule.con = con
         ' Prepares query string
-        Dim query As String = "SELECT username, password FROM Users WHERE strComp(username, @username, 0) = 0 AND strComp(password, @password, 0) = 0"
+        Dim query As String = "SELECT nombre, contraseña FROM Usuarios WHERE strComp(nombre, @nombre, 0) = 0 AND strComp(contraseña, @contraseña, 0) = 0"
         ' Declares variables which values are equal to user inputs
         Dim username As String = userText.Text
         Dim password As String = passText.Text
@@ -16,8 +16,8 @@ Public Class Login
             ' Execute a command to the database with the method OleDbCommand
             Dim command As New OleDbCommand(query, con)
             ' Links values of the Users table with query's placeholders
-            command.Parameters.AddWithValue("@username", username)
-            command.Parameters.AddWithValue("@password", password)
+            command.Parameters.AddWithValue("@nombre", username)
+            command.Parameters.AddWithValue("@", password)
 
             ' Reads the Users table values
             Dim reader As OleDbDataReader = command.ExecuteReader()
@@ -56,5 +56,4 @@ Public Class Login
         ' Aplicar la forma redondeada al botón
         submitButton.Region = New Region(buttonPath)
     End Sub
-
 End Class

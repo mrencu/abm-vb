@@ -47,6 +47,8 @@ Partial Class Home
         '
         'dataGrid
         '
+        Me.dataGrid.AllowUserToAddRows = False
+        Me.dataGrid.AllowUserToDeleteRows = False
         Me.dataGrid.BackgroundColor = System.Drawing.Color.SandyBrown
         Me.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dataGrid.Cursor = System.Windows.Forms.Cursors.Cross

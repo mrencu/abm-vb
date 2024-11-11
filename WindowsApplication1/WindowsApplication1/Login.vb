@@ -5,7 +5,7 @@ Public Class Login
         ' Prepares connection string from module
         SystemModule.con = con
         ' Prepares query string
-        Dim query As String = "SELECT nombre, contraseña FROM Usuarios WHERE strComp(nombre, @nombre, 0) = 0 AND strComp(contraseña, @contraseña, 0) = 0"
+        Dim query As String = "SELECT COUNT(*) FROM Usuarios WHERE strComp(nombre, @nombre, 0) = 0 AND strComp(contraseña, @contraseña, 0) = 0"
         ' Declares variables which values are equal to user inputs
         Dim username As String = userText.Text
         Dim password As String = passText.Text
@@ -17,17 +17,15 @@ Public Class Login
             Dim command As New OleDbCommand(query, con)
             ' Links values of the Users table with query's placeholders
             command.Parameters.AddWithValue("@nombre", username)
-            command.Parameters.AddWithValue("@", password)
+            command.Parameters.AddWithValue("@contraseña", password)
 
-            ' Reads the Users table values
-            Dim reader As OleDbDataReader = command.ExecuteReader()
+            Dim result As Integer = Convert.ToInt32(command.ExecuteScalar())
 
-            ' TRUE = The reader has found data // FALSE = The reader hasn't found data
-            If reader.HasRows Then
+            If result > 0 Then
                 Me.Hide()
                 SystemModule.mainForm.Show()
             Else
-                ' If the reader hasn't found data, we show a message to the user
+                '  If the result is 0, it means no matching user was found  
                 MessageBox.Show("Nombre de usuario no encontrado o clave incorrecta")
             End If
         Catch ex As Exception

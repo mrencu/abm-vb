@@ -53,4 +53,8 @@ Public Class Home
         Me.Hide()
         SystemModule.addForm.ShowDialog()
     End Sub
+
+    Private Sub updateButton_Click(sender As Object, e As EventArgs) Handles updateButton.Click
+        showData()
+    End Sub
 End Class

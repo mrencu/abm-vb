@@ -110,16 +110,16 @@
     <Compile Include="Home.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Módulo.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
-    </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -139,9 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -173,37 +173,16 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\4092564-about-mobile-ui-profile-ui-user-website_114033.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\9187604.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\majesticons--user-box-line %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fluent--wrench-16-filled.png" />
+    <None Include="Resources\user.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wrench.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\wrench1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\add.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fluent--add-28-regular.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fluent--add-28-regular%281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fluent--add-12-filled.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\minus.png" />

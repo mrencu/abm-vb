@@ -32,16 +32,17 @@ Partial Class Home
         Me.hourLabel = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.addButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
+        Me.updateButton = New System.Windows.Forms.Button()
         CType(Me.dataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.ToolStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'dataGrid
@@ -60,7 +61,7 @@ Partial Class Home
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(37, 364)
+        Me.Label1.Location = New System.Drawing.Point(36, 297)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(121, 32)
         Me.Label1.TabIndex = 1
@@ -72,7 +73,7 @@ Partial Class Home
         Me.employeeText.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.employeeText.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.employeeText.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.employeeText.Location = New System.Drawing.Point(164, 364)
+        Me.employeeText.Location = New System.Drawing.Point(163, 297)
         Me.employeeText.Name = "employeeText"
         Me.employeeText.Size = New System.Drawing.Size(100, 32)
         Me.employeeText.TabIndex = 2
@@ -84,7 +85,7 @@ Partial Class Home
         Me.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.searchButton.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.searchButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.searchButton.Location = New System.Drawing.Point(42, 420)
+        Me.searchButton.Location = New System.Drawing.Point(41, 347)
         Me.searchButton.Name = "searchButton"
         Me.searchButton.Padding = New System.Windows.Forms.Padding(10)
         Me.searchButton.Size = New System.Drawing.Size(222, 60)
@@ -102,7 +103,7 @@ Partial Class Home
         Me.hourLabel.AutoSize = True
         Me.hourLabel.Font = New System.Drawing.Font("Segoe UI", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.hourLabel.ForeColor = System.Drawing.Color.Orange
-        Me.hourLabel.Location = New System.Drawing.Point(26, 48)
+        Me.hourLabel.Location = New System.Drawing.Point(33, 49)
         Me.hourLabel.Name = "hourLabel"
         Me.hourLabel.Size = New System.Drawing.Size(439, 128)
         Me.hourLabel.TabIndex = 8
@@ -128,16 +129,6 @@ Partial Class Home
         Me.Panel2.Size = New System.Drawing.Size(790, 250)
         Me.Panel2.TabIndex = 12
         '
-        'ToolStrip1
-        '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.addButton, Me.ToolStripButton1, Me.ToolStripButton2})
-        Me.ToolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(790, 23)
-        Me.ToolStrip1.TabIndex = 12
-        Me.ToolStrip1.Text = "ToolStrip1"
-        '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
@@ -148,9 +139,19 @@ Partial Class Home
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
+        'ToolStrip1
+        '
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.addButton, Me.ToolStripButton1, Me.ToolStripButton2})
+        Me.ToolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStrip1.Name = "ToolStrip1"
+        Me.ToolStrip1.Size = New System.Drawing.Size(790, 23)
+        Me.ToolStrip1.TabIndex = 12
+        Me.ToolStrip1.Text = "ToolStrip1"
+        '
         'addButton
         '
-        Me.addButton.Image = Global.WindowsApplication1.My.Resources.Resources.fluent__add_12_filled
+        Me.addButton.Image = Global.WindowsApplication1.My.Resources.Resources.add
         Me.addButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.addButton.Name = "addButton"
         Me.addButton.Size = New System.Drawing.Size(65, 20)
@@ -172,6 +173,21 @@ Partial Class Home
         Me.ToolStripButton2.Size = New System.Drawing.Size(78, 20)
         Me.ToolStripButton2.Text = "Modificar"
         '
+        'updateButton
+        '
+        Me.updateButton.BackColor = System.Drawing.Color.DarkOrange
+        Me.updateButton.FlatAppearance.BorderSize = 0
+        Me.updateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.updateButton.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.updateButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.updateButton.Location = New System.Drawing.Point(41, 420)
+        Me.updateButton.Name = "updateButton"
+        Me.updateButton.Padding = New System.Windows.Forms.Padding(10)
+        Me.updateButton.Size = New System.Drawing.Size(222, 60)
+        Me.updateButton.TabIndex = 13
+        Me.updateButton.Text = "Actualizar"
+        Me.updateButton.UseVisualStyleBackColor = False
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -179,6 +195,7 @@ Partial Class Home
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.Chocolate
         Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.Controls.Add(Me.updateButton)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.searchButton)
         Me.Controls.Add(Me.employeeText)
@@ -196,9 +213,9 @@ Partial Class Home
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -216,4 +233,5 @@ Partial Class Home
     Friend WithEvents ToolStripButton1 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton2 As System.Windows.Forms.ToolStripButton
     Friend WithEvents addButton As System.Windows.Forms.ToolStripButton
+    Friend WithEvents updateButton As System.Windows.Forms.Button
 End Class

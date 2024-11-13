@@ -57,3 +57,5 @@ C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplic
 C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
 C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
 C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Añadir.resources
+C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Eliminar.resources
+C:\Users\Marcos\Documents\Colegio\Romeo\abm-vb\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Modificar.resources

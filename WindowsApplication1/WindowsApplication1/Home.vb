@@ -54,7 +54,18 @@ Public Class Home
         SystemModule.addForm.ShowDialog()
     End Sub
 
+    Private Sub deleteButton_Click(sender As Object, e As EventArgs) Handles deleteButton.Click
+        Me.Hide()
+        SystemModule.deleteForm.ShowDialog()
+    End Sub
+
     Private Sub updateButton_Click(sender As Object, e As EventArgs) Handles updateButton.Click
+        Me.Hide()
+        SystemModule.updateForm.ShowDialog()
+    End Sub
+
+    Private Sub refreshButton_Click(sender As Object, e As EventArgs) Handles refreshButton.Click
         showData()
     End Sub
+
 End Class

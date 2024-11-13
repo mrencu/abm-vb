@@ -7,7 +7,7 @@ Public Class Añadir
     End Sub
 
     Private Sub Añadir_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        SystemModule.mainForm.Show()  ' Esto cierra la aplicación completamente
+        SystemModule.mainForm.Show()
     End Sub
 
     Private Sub LoadEstadoComboBox()

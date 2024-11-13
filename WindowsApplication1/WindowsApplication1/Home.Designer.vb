@@ -35,9 +35,9 @@ Partial Class Home
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.addButton = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
-        Me.updateButton = New System.Windows.Forms.Button()
+        Me.deleteButton = New System.Windows.Forms.ToolStripButton()
+        Me.updateButton = New System.Windows.Forms.ToolStripButton()
+        Me.refreshButton = New System.Windows.Forms.Button()
         CType(Me.dataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -143,7 +143,7 @@ Partial Class Home
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.addButton, Me.ToolStripButton1, Me.ToolStripButton2})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.addButton, Me.deleteButton, Me.updateButton})
         Me.ToolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
@@ -159,36 +159,36 @@ Partial Class Home
         Me.addButton.Size = New System.Drawing.Size(65, 20)
         Me.addButton.Text = " Añadir"
         '
-        'ToolStripButton1
+        'deleteButton
         '
-        Me.ToolStripButton1.Image = Global.WindowsApplication1.My.Resources.Resources.minus
-        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(70, 20)
-        Me.ToolStripButton1.Text = "Eliminar"
-        '
-        'ToolStripButton2
-        '
-        Me.ToolStripButton2.Image = Global.WindowsApplication1.My.Resources.Resources.pencil
-        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton2.Name = "ToolStripButton2"
-        Me.ToolStripButton2.Size = New System.Drawing.Size(78, 20)
-        Me.ToolStripButton2.Text = "Modificar"
+        Me.deleteButton.Image = Global.WindowsApplication1.My.Resources.Resources.minus
+        Me.deleteButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.deleteButton.Name = "deleteButton"
+        Me.deleteButton.Size = New System.Drawing.Size(70, 20)
+        Me.deleteButton.Text = "Eliminar"
         '
         'updateButton
         '
-        Me.updateButton.BackColor = System.Drawing.Color.DarkOrange
-        Me.updateButton.FlatAppearance.BorderSize = 0
-        Me.updateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.updateButton.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.updateButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.updateButton.Location = New System.Drawing.Point(41, 420)
+        Me.updateButton.Image = Global.WindowsApplication1.My.Resources.Resources.pencil
+        Me.updateButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.updateButton.Name = "updateButton"
-        Me.updateButton.Padding = New System.Windows.Forms.Padding(10)
-        Me.updateButton.Size = New System.Drawing.Size(222, 60)
-        Me.updateButton.TabIndex = 13
-        Me.updateButton.Text = "Actualizar"
-        Me.updateButton.UseVisualStyleBackColor = False
+        Me.updateButton.Size = New System.Drawing.Size(78, 20)
+        Me.updateButton.Text = "Modificar"
+        '
+        'refreshButton
+        '
+        Me.refreshButton.BackColor = System.Drawing.Color.DarkOrange
+        Me.refreshButton.FlatAppearance.BorderSize = 0
+        Me.refreshButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.refreshButton.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.refreshButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.refreshButton.Location = New System.Drawing.Point(41, 420)
+        Me.refreshButton.Name = "refreshButton"
+        Me.refreshButton.Padding = New System.Windows.Forms.Padding(10)
+        Me.refreshButton.Size = New System.Drawing.Size(222, 60)
+        Me.refreshButton.TabIndex = 13
+        Me.refreshButton.Text = "Actualizar"
+        Me.refreshButton.UseVisualStyleBackColor = False
         '
         'Home
         '
@@ -197,7 +197,7 @@ Partial Class Home
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.Chocolate
         Me.ClientSize = New System.Drawing.Size(784, 561)
-        Me.Controls.Add(Me.updateButton)
+        Me.Controls.Add(Me.refreshButton)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.searchButton)
         Me.Controls.Add(Me.employeeText)
@@ -232,8 +232,8 @@ Partial Class Home
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
-    Friend WithEvents ToolStripButton1 As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ToolStripButton2 As System.Windows.Forms.ToolStripButton
+    Friend WithEvents deleteButton As System.Windows.Forms.ToolStripButton
+    Friend WithEvents updateButton As System.Windows.Forms.ToolStripButton
     Friend WithEvents addButton As System.Windows.Forms.ToolStripButton
-    Friend WithEvents updateButton As System.Windows.Forms.Button
+    Friend WithEvents refreshButton As System.Windows.Forms.Button
 End Class

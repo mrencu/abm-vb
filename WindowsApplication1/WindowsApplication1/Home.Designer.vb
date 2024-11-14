@@ -153,7 +153,7 @@ Partial Class Home
         '
         'addButton
         '
-        Me.addButton.Image = Global.WindowsApplication1.My.Resources.Resources.add
+        Me.addButton.Image = Global.abm.My.Resources.Resources.add
         Me.addButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.addButton.Name = "addButton"
         Me.addButton.Size = New System.Drawing.Size(65, 20)
@@ -161,7 +161,7 @@ Partial Class Home
         '
         'deleteButton
         '
-        Me.deleteButton.Image = Global.WindowsApplication1.My.Resources.Resources.minus
+        Me.deleteButton.Image = Global.abm.My.Resources.Resources.minus
         Me.deleteButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.deleteButton.Name = "deleteButton"
         Me.deleteButton.Size = New System.Drawing.Size(70, 20)
@@ -169,7 +169,7 @@ Partial Class Home
         '
         'updateButton
         '
-        Me.updateButton.Image = Global.WindowsApplication1.My.Resources.Resources.pencil
+        Me.updateButton.Image = Global.abm.My.Resources.Resources.pencil
         Me.updateButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.updateButton.Name = "updateButton"
         Me.updateButton.Size = New System.Drawing.Size(78, 20)

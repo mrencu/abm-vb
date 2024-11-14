@@ -112,7 +112,7 @@ Partial Class Login
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.user
+        Me.PictureBox1.Image = Global.abm.My.Resources.Resources.user
         Me.PictureBox1.Location = New System.Drawing.Point(117, 37)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(150, 150)
